@@ -23,9 +23,9 @@
 from gpiozero import MotionSensor, LED
 from time import sleep, time
 
-sensor = MotionSensor(14)
-green = LED(15)
-red = LED(18)
+sensor = MotionSensor(11)
+green = LED(12)
+red = LED(22)
 
 def on_motion():
 	print "Motion detected!"

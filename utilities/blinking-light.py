@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 from time import sleep # Import the sleep function from the time module
 
-lightPin = 23
+lightPin = 12
 
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
@@ -12,3 +12,4 @@ while True: # Run forever
  sleep(1) # Sleep for 1 second
  GPIO.output(lightPin, GPIO.LOW) # Turn off
  sleep(1) # Sleep for 1 second
+ 
